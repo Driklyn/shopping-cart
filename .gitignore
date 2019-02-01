@@ -1,0 +1,7 @@
+*.mdproj
+*.sln
+*.userprefs
+*.zip
+package-lock.json
+node_modules
+build

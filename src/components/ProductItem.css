@@ -1,0 +1,144 @@
+﻿.productItem {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 28px;
+  overflow: hidden;
+}
+
+.productItem:last-child {
+  margin-bottom: 0;
+}
+
+.productItem__photo {
+  align-self: center;
+  flex-shrink: 0;
+  max-width: 38%;
+}
+
+.productItem__container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 38px 55px;
+}
+
+.productItem__topContainer {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.productItem__title {
+  flex-grow: 1;
+  font-size: 38px;
+  font-weight: var(--normalWeight);
+  line-height: 44px;
+  margin: 0;
+}
+
+.productItem__price {
+  align-self: flex-end;
+  font-size: 21px;
+  line-height: 24px;
+  margin: 0 0 4px;
+}
+
+.productItem__bottomContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.productItem__inventory {
+  color: #939393;
+  flex-grow: 1;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 0;
+}
+
+.productItem__actionsContainer {
+  display: flex;
+}
+
+.productItem__quantity {
+  border: 1px solid #f5f5f5;
+  box-sizing: border-box;
+  flex-grow: 1;
+  font-size: 14px;
+  height: 40px;
+  outline: none;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.productItem__quantity:focus {
+  border-color: #5e97d1;
+}
+
+@media screen and (max-width: 1279px) {
+  .productItem__price {
+    margin: 0 0 2px;
+  }
+
+  .productItem__inventory {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .productItem {
+    margin-bottom: 24px;
+  }
+
+  .productItem__container {
+    padding: 26px 38px;
+  }
+
+  .productItem__topContainer {
+    margin-bottom: 10px;
+  }
+
+  .productItem__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .productItem {
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 294px;
+  }
+
+  .productItem__container {
+    box-sizing: border-box;
+    min-height: 160px;
+    padding: 22px 24px;
+  }
+
+  .productItem__topContainer {
+    margin-bottom: 8px;
+  }
+
+  .productItem__photo {
+    height: 206px;
+    max-width: none;
+  }
+
+  .productItem__title {
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  .productItem__price {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .productItem__quantity {
+    height: 30px;
+  }
+}

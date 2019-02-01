@@ -1,0 +1,86 @@
+﻿body {
+  --normalWeight: 400;
+
+  background-color: #f4f5f7;
+  box-sizing: border-box;
+  color: #222;
+  font-family: Arial, sans-serif;
+  font-weight: var(--normalWeight);
+  margin: 0 auto;
+  padding: 55px 82px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #dadada;
+}
+
+.app__header {
+  display: flex;
+}
+
+.app__storeName {
+  flex-grow: 1;
+  font-size: 51px;
+  font-weight: var(--normalWeight);
+  line-height: 44px;
+  margin: 0;
+}
+
+.app__cart {
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 0 1px;
+}
+
+.app__cartIcon {
+  height: 14px;
+  margin-right: 8px;
+  width: 17px;
+  vertical-align: top;
+}
+
+.app__divider {
+  margin: 32px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  body {
+    padding: 47px 49px;
+  }
+
+  .app__storeName {
+    font-size: 38px;
+    line-height: 35px;
+  }
+
+  .app__divider {
+    margin: 28px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding: 33px 13px;
+    width: 320px;
+  }
+
+  .app__header {
+    flex-direction: column;
+  }
+
+  .app__storeName {
+    font-size: 28px;
+  }
+
+  .app__cart {
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .app__divider {
+    margin: 20px 0;
+  }
+}

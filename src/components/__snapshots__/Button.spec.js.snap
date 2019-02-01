@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component renders using custom props 1`] = `
+<button
+  className="customClassName button button--secondary button--squared"
+  disabled="disabled"
+  onClick={[MockFunction]}
+>
+  Click me!
+</button>
+`;
+
+exports[`Button component renders using default props 1`] = `
+<button
+  className="button button--primary button--rounded"
+/>
+`;

@@ -1,0 +1,130 @@
+﻿.cartModal {
+  background-color: rgba(9,9,9,.09);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: grid;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.cartModal__container {
+  align-items: center;
+  display: grid;
+  height: 100%;
+  justify-items: center;
+  pointer-events: none;
+}
+
+.cartModal__contents {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 14px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.17);
+  box-sizing: border-box;
+  cursor: auto;
+  max-width: 780px;
+  padding: 35px 40px;
+  pointer-events: auto;
+  position: relative;
+  width: 100%;
+}
+
+.cartModal__closeIcon {
+  --size: 30px;
+
+  cursor: pointer;
+  height: var(--size);
+  position: absolute;
+  right: var(--size);
+  top: var(--size);
+  width: var(--size);
+}
+
+.cartModal .productItem {
+  border-radius: 0;
+}
+
+.cartModal .productItem__price {
+  margin: 0 0 2px;
+}
+
+.cartModal .productItem__add,
+.cartModal .productItem__remove {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.cartModal .productItem__add {
+  padding-top: 1px;
+}
+
+.cartModal .productItem__remove {
+  padding-bottom: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .cartModal .productItem__container {
+    padding: 13px 38px;
+  }
+
+  .cartModal .productItem__topContainer {
+    margin-bottom: 10px;
+  }
+
+  .cartModal .productItem__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .cartModal .productItem__inventory {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cartModal {
+    padding: 0;
+  }
+
+  .cartModal__contents {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: 100%;
+    padding: 48px 13px 13px;
+  }
+
+  .cartModal__closeIcon {
+    --size: 20px;
+  }
+
+  .cartModal .productItem {
+    max-width: none;
+  }
+
+  .cartModal .productItem__photo {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .cartModal .productItem__container {
+    min-height: 130px;
+    padding: 13px;
+  }
+
+  .cartModal .productItem__add,
+  .cartModal .productItem__remove,
+  .cartModal .productItem__quantity {
+    width: 100%;
+  }
+
+  .cartModal .productItem__totalContainer {
+    padding: 0 13px;
+  }
+}

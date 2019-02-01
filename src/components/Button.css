@@ -1,0 +1,68 @@
+﻿.button {
+  --height: 40px;
+
+  border: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: var(--normalWeight);
+  line-height: var(--height);
+  outline: none;
+  padding: 0 26px;
+}
+
+.button img {
+  vertical-align: middle;
+}
+
+.button:not([disabled]) {
+  cursor: pointer;
+}
+
+.button--primary {
+  background-color: #5e97d1;
+  color: #fff;
+}
+
+.button--primary:hover {
+  background-color: #407fc0;
+}
+
+.button--primary[disabled] {
+  background-color: #cedff1;
+  color: #dde9f5;
+}
+
+.button--secondary {
+  background-color: #f5f5f5;
+  color: #8e939c;
+}
+
+.button--secondary:hover {
+  background-color: #5e97d1;
+  color: #fff;
+}
+
+.button--secondary[disabled] {
+  background-color: #f9f9f9;
+  color: #dedede;
+}
+
+.button--rounded {
+  border-radius: var(--height);
+}
+
+.button--roundedLeft {
+  border-radius: var(--height) 0 0 var(--height);
+}
+
+.button--roundedRight {
+  border-radius: 0 var(--height) var(--height) 0;
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    --height: 30px;
+
+    padding: 0 17px;
+  }
+}
