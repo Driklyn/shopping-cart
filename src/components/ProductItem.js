@@ -8,7 +8,7 @@ const ProductItem = ({ product, addButton, removeButton, onAddToCartClicked, onR
   <div className="productItem">
     <img
       className="productItem__photo"
-      src={`/img/${product.title.toLowerCase()}.png`/* NOTE: Ideally the JSON would store a `photoUrl` string instead of using `title` here */}
+      src={`./img/${product.title.toLowerCase()}.png`/* NOTE: Ideally the JSON would store a `photoUrl` string instead of using `title` here */}
       alt="" />
     <div className="productItem__container">
       <div className="productItem__topContainer">

@@ -19,7 +19,7 @@ const App = ({ products, setCartVisibility }) => (
         onClick={() => setCartVisibility(true)}>
         <img
           className="app__cartIcon"
-          src="/img/cart-black.svg"
+          src="./img/cart-black.svg"
           alt="" />
         {products.length > 0 ? CART_NOT_EMPTY : CART_EMPTY}
       </p>
